@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradient {
+  0% {
+    background-color: #EDECE3;
+  }
+  50% {
+    background-color: #F9F8F3;
+  }
+  100% {
+    background-color: #EDECE3;
+  }
+}
+
+body {
+  animation: gradient 10s ease infinite;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --primary-color: #EDECE3; /* Primary color for the button */
+  --hover-color: #F9F8F3; /* Hover color for the button */
+  --font-family: 'Roboto', sans-serif; /* Primary font */
+}
+
+.button-primary {
+  background-color: var(--primary-color);
+  color: black; /* Change text color for better contrast */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-family);
+  transition: background-color 0.3s;
+}
+
+.button-primary:hover {
+  background-color: var(--hover-color); /* Use hover color */
+}
+
+.container {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  font-family: var(--font-family);
+}
+
+input {
+  margin-top: 10px; /* Add gap between text and input field */
+}
