@@ -1,0 +1,1 @@
+import { database } from '../backend/backend-firebase'; // Import the database instance 

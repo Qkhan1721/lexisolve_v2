@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { firestore } from '../server/firebase';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import Navbar from './Navbar';
 import { useNavigate } from 'react-router-dom';
+import { firestore } from '../server/firebase';
 
 const AddApi = () => {
   const [apiKey, setApiKey] = useState('');

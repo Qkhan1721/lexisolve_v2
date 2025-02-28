@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
-import { firestore } from '../server/firebase'; // Import Firestore if needed
 import { FaGoogle } from 'react-icons/fa';
 
 const Login = () => {
